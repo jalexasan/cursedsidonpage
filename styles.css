@@ -1,0 +1,206 @@
+.test {
+    font-size: 50px;
+    color: white;
+    background-color: rgb(119, 63, 63);
+    width: 100%;
+  }
+
+  .body {
+    top: 100px;
+  }
+
+  .navigatebar {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 2px 2px rgb(212, 212, 212);
+  }
+
+  .buttonmenu {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(33, 87, 84);
+    color: rgb(92, 58, 58);
+    grid-template-rows: 1 1 1 1;
+    justify-content: space-evenly;
+    height: 50px;
+    padding: 20px;
+  }
+
+  .navbutt {
+    width: 200px;
+    height: 100%;
+    border-radius: 25px;
+    border-width: 1px;
+    border-color: rgb(65, 53, 37);
+    background-color: rgb(235, 207, 81);
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  .navbutt:hover {
+    opacity: 0.3;
+    cursor: pointer;
+  }
+
+  .introtext {
+    display: flex;
+    grid-template-rows: 1 1 1;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    margin-left: 100px;
+
+  }
+
+  .introtitle {
+    font-size: 45px;
+    font-weight: bold;
+  }
+  
+  .biotext {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+  }
+
+  .ballz {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+    font-size: 25px;
+
+  }
+
+  .help {
+    margin-right: 30px;
+    box-shadow:  5px 5px 5px rgb(211, 211, 211);
+  }
+
+  .express {
+    display: flex;
+    flex-direction: column;
+    font-family: bitter;
+    justify-content: space-evenly;
+    border-width: 5px;
+    border-color: rgb(178, 214, 224);
+    border-style: double;
+  }
+
+  .infotext {
+    display: flex;
+    grid-template-columns: 1 1fr ;
+    justify-content: space-between;
+    border-width: 2px;
+    border: solid rgb(227, 241, 255);
+    background-color: rgb(119, 63, 63);
+    padding: 15px;
+  }
+
+  .chatcontainer {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    justify-content: space-around;
+    border-width: 1px;
+    border-color: grey;
+    border-style: dotted;
+  }
+
+  .chatpfp {
+  }
+
+  .chatbubble {
+    height: 100%px;
+    width: 400px;
+    position: relative;
+    
+  }
+
+  .centertext, .centertext2 {
+    position: absolute;
+    font-size: 25px;
+  }
+
+  .centertext {
+    top: 796px;
+    left: 450px;
+  }
+
+  .centertext2 {
+    width: 300px;
+    top: 928px;
+    left: 396px;
+  }
+
+  .sidontalk {
+    height: 60px;
+    width: 500px;
+    align-self: right;
+    font-size: 25px;
+    
+  }
+
+  .guh {
+    display: flex;
+    grid-template-columns: 1 1;
+    justify-content: space-between;
+    align-items: center;
+  } 
+
+  .tpose {
+    border-radius: 75px;
+  }
+
+  .press {
+    height: 150px;
+    width: 150px;
+  }
+
+  .press:hover {
+    content: url("strangepics/tpose.jpg");
+    border-radius: 75px;
+  }
+
+  .ew {
+    height: 50px;
+    width: 300px;
+    border-radius: 35px;
+    background-color: rgb(235, 207, 81);
+    color: black;
+    font-weight: bold;
+    font-family: bitter;
+    font-size: 20px;
+    margin: 20px;
+    
+  }
+
+  .ew:active {
+    background-color: green;
+  }
+
+  .ew:hover {
+    opacity: .5;
+    cursor: pointer;
+  }
+
+  .HUH {
+    height: 200px;
+    width: 900px;
+  }
+
+  .sus:hover {
+    opacity: 0.6;
+  }
+
+  .virus {
+    position: absolute;
+    right: 300x;
+    top: 1475px;
+    font-size: 50px;
+    color: white;
+  }
