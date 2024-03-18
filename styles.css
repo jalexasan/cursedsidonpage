@@ -111,9 +111,6 @@
     border-style: dotted;
   }
 
-  .chatpfp {
-  }
-
   .chatbubble {
     height: 100%px;
     width: 400px;
@@ -195,6 +192,7 @@
 
   .sus:hover {
     opacity: 0.6;
+    cursor: pointer;
   }
 
   .virus {
