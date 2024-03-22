@@ -118,6 +118,11 @@
     
   }
 
+  .sidonmood {
+    width: 500px;
+    height: 600px;
+  }
+
   .centertext, .centertext2 {
     position: absolute;
     font-size: 25px;
@@ -137,9 +142,28 @@
   .sidontalk {
     height: 60px;
     width: 500px;
-    align-self: right;
     font-size: 25px;
-    
+    border-width: 1px;
+    border-style: solid;
+    background-color:rgb(228, 255, 255);
+    border-color:rgb(230, 230, 230);
+    padding-left: 10px;
+    color:rgb(68, 88, 88);
+  }
+
+  .sendbutton {
+    background-color:rgb(33, 87, 84);
+    color: white;
+    height: 65px;
+    border-width: 0;
+    width:100px;
+    font-size: 20px;
+    font-weight: 300;
+  }
+
+  .sendbutton:hover {
+    opacity: 0.5;
+    cursor: pointer;
   }
 
   .guh {

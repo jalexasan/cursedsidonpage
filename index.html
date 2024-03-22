@@ -57,13 +57,12 @@
 
       <div class = "chatcontainer"> 
         <div> <img class = "chatbubble" src = "strangepics/sidonchat.jpg"> </img> <div class = "centertext"> Hey there! ^_^ </div> </div>
-        <div> <img src = "strangepics/mechat.png">  </img>  <div class = "centertext2"> GOODNESS GRACIOUS. SIDON, I [EXPLETIVE] [EXPLETIVE] [EXPLETIVE] [EXPLETIVE] [EXPLETIVE]
-          LIKE OH MY GOD PLEASE I CANNOT. GYAAAAAAAAAAAAAAAAAAAAAAAAT
+        <div> <img src = "strangepics/mechat.png">  </img>  <div class = "centertext2" > O_O
         </div> </div>
-        <div> <input class = "sidontalk" type = "text" placeholder = "Send a message to Sidon!"></div>
+        <div> <input class = "sidontalk" type = "text" placeholder = "Send a message to Sidon!" onkeydown = sidonCheck(event)> <button class = "sendbutton" onclick = sidonFilter(event)> Send </button> </div> 
         Please, do not scare him. Do not.
       </div>
-
+      <div> <img class = "sidonmood" src = "strangepics/sidonneutral.webp"> </div>
      </div>
 
     <!-- bottom section XD -->
@@ -91,6 +90,69 @@
 
 
   </div>
+
+  <script>
+    //just checks for enter button input whilst using the input bar
+    function sidonCheck(event) {
+      if (event.key === 'Enter')
+      {
+        sidonFilter();
+      }
+
+    }
+    //filters user responses with a buncha if statements that i might change later
+    function sidonFilter() {
+      let user = document.querySelector('.sidontalk');
+      const userText = (user.value.toLowerCase());
+      console.log(userText);
+
+      if (userText === 'hi'
+          || userText === 'hey'
+          || userText === 'hello') {
+        console.log('okay this works');
+        sidonRespond('Hello there!');
+      } else if (userText === 'bye'
+          || userText === 'goodbye'
+          || userText === 'bai') {
+        sidonRespond('Aww, going so soon? Goodbye, my friend!');
+      } else if (userText === 'fuck you') {
+        sidonRespond('Well then...');
+      } else if (userText === 'i\'m good') {
+        sidonRespond('That is good! I am as well.');
+      } else if (userText === 'i want you') {
+        sidonRespond('Well to be frank, I certainly don\'t want you.');
+      } else if (userText === 'kayci') {
+        sidonRespond('Hello Kayci! I grant you luck for your future endeavors! Good luck, friend!');
+      } else if (userText === 'maya') {
+        sidonRespond('Hello Maya! I believe there is some white fur on you. What grand beast does that come from?');
+      } else if (userText === 'meow') {
+        sidonRespond('I am a cat too! Meow. Nya~');
+      }
+       else {
+        sidonRespond('I don\'t understand that because the person who programmed this website is dumb as fuck! Sorry, friend!')
+      }
+      
+
+
+      
+
+    }
+
+    //change sidon's message, alter later to also change image in reaction to user message
+    function sidonRespond(text, mood = 'neutral') {
+      document.querySelector('.centertext2')
+          .innerHTML = text;
+
+      if (mood === 'happy') {
+
+      } else if (mood === 'sad') {
+      } else if (mood === 'shock') {
+      } else if (mood === 'wow') {
+      } else if (mood === 'angy') {
+      }
+    }
+
+  </script>
 
 </body>
 
